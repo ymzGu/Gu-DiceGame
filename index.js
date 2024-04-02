@@ -1,8 +1,8 @@
 
 window.onload = function(){
 
-    var player1Name = prompt("Player1's name:");
-    var player2Name = prompt("Player2's name:");
+    var player1Name = prompt("enter name 1");
+    var player2Name = prompt("enter name 2");
     var nameText =  document.querySelectorAll(".container p");
 
     if (player1Name === "" || player1Name == null){
@@ -68,11 +68,11 @@ switch (diceeNum2) {
 }
     
     if(diceeNum1>diceeNum2){
-        document.querySelector("h1").innerText = nameText[0].innerText+" wins";
+        document.querySelector("h1").innerText = nameText[0].innerText+" wins!";
     }else if(diceeNum2>diceeNum1){
-        document.querySelector("h1").innerText = nameText[1].innerText+" wins";
+        document.querySelector("h1").innerText = nameText[1].innerText+" wins!";
     } else {
-        document.querySelector("h1").innerText = "Oh,you both win!";
+        document.querySelector("h1").innerText = "Draw!";
     }
 }
 }
