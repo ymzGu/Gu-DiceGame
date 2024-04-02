@@ -72,7 +72,7 @@ footer {
   font-family: 'Indie Flower', cursive;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 960px) {
  
   .body{
     height: 90vh;
@@ -80,6 +80,7 @@ footer {
   
   .container {
     margin-top: 10px;
+    height: 85vh;
     width: 100%;
   }
 
@@ -90,15 +91,14 @@ footer {
     height: 130px;
   }
   h1{
-    font-size: 3.5rem;
-    
+    font-size: 5rem;
   }
   h2{
     margin-top: 20px;
+    margin-bottom: 25px;
     font-size: 1.1rem;
   }
   p{
-    margin-top: 25px;
     font-size: 1.3rem;
   }
   .dice{
@@ -110,6 +110,39 @@ footer {
   }
   footer {
     margin-top: 5%;
+  }
+}
 
+@media (max-width: 500px) {
+  #forh1{
+    margin-top: 35px;
+  }
+  h1{
+    font-size: 3.5rem;
+  }
+  h2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+  }
+  .dice{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  img {
+    width: 70%;
+  }
+  .dicebox{
+    display: flex;
+    justify-content: center;
+  }
+  .dice1{
+    margin-right: -7px;
+  }
+  .dice2{
+    margin-left: -7px;
+  }
+  footer {
+    margin-top: 2%;
   }
 }
