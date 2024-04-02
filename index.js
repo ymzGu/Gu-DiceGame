@@ -1,8 +1,8 @@
 
 window.onload = function(){
 
-    var player1Name = prompt("enter name 1");
-    var player2Name = prompt("enter name 2");
+    var player1Name = prompt("Player1's name:");
+    var player2Name = prompt("Player2's name:");
     var nameText =  document.querySelectorAll(".container p");
 
     if (player1Name === "" || player1Name == null){
