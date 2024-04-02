@@ -1,8 +1,8 @@
 
 window.onload = function(){
 
-    var nPlayer1Name = prompt("enter name 1");
-    var nPlayer2Name = prompt("enter name 2");
+    var nPlayer1Name = prompt("Enter name 1");
+    var nPlayer2Name = prompt("Enter name 2");
 
     var player1Name;
     if (nPlayer1Name.charCodeAt(0) > 0x4E00 && nPlayer1Name.charCodeAt(0) < 0x9FA5) {
