@@ -48,7 +48,7 @@ h2 {
   user-select: none; /* Standard syntax */
 }
 
-p {
+.dicebox p{
   font-size: 2rem;
   color: #EE9322;
   font-family: 'Indie Flower', cursive;
@@ -98,8 +98,8 @@ footer {
     margin-bottom: 25px;
     font-size: 1.1rem;
   }
-  p{
-    font-size: 1.3rem;
+  .dicebox p{
+    font-size: 1.8rem;
   }
   .dice{
     margin-left: 5px;
@@ -124,6 +124,9 @@ footer {
     margin-top: 30px;
     margin-bottom: 40px;
     font-size: 1rem;
+  }
+  .dicebox p{
+    font-weight: 500;
   }
   .dice{
     margin-left: 5px;
