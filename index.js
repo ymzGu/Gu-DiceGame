@@ -1,11 +1,23 @@
 
 window.onload = function(){
-    var player1Name = document.querySelectorAll(".container p");
-    player1Name[0].innerText = prompt("Please enter player1's name");
-    var player2Name = document.querySelectorAll(".container p");
-    player2Name[1].innerText = prompt("Please enter player1's name")
+
+    var player1Name = prompt("enter name 1");
+    var player2Name = prompt("enter name 2");
+    var nameText =  document.querySelectorAll(".container p");
+
+    if (player1Name === "" || player1Name == null){
+        nameText[0] = "player 1";
+    } else {
+        nameText[0].innerText = player1Name;        
+    }
+    if (player2Name ==="" || player2Name == null){
+        nameText[1]= "player 2";
+    } else {
+        nameText[1].innerText = player2Name;
+    }
 
     var clickPlace = document.getElementsByTagName("h2");
+    clickPlace[0].classList.add("unselectable");
     clickPlace[0].onclick = function(){
     var diceeNum1 = Math.floor(Math.random()*6)+1;
     var diceeNum2 = Math.floor(Math.random()*6)+1;
@@ -56,9 +68,9 @@ switch (diceeNum2) {
 }
     
     if(diceeNum1>diceeNum2){
-        document.querySelector("h1").innerText = player1Name[0].innerText+"wins";
+        document.querySelector("h1").innerText = nameText[0].innerText+" wins";
     }else if(diceeNum2>diceeNum1){
-        document.querySelector("h1").innerText = player2Name[1].innerText+"wins";
+        document.querySelector("h1").innerText = nameText[1].innerText+" wins";
     } else {
         document.querySelector("h1").innerText = "Oh,you both win!";
     }
