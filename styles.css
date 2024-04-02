@@ -75,11 +75,12 @@ footer {
 @media (max-width: 600px) {
  
   .body{
-      height: 90vh;
+    height: 90vh;
   }
   
   .container {
     margin-top: 10px;
+    width: 100%;
   }
 
   #forh1{
@@ -90,6 +91,7 @@ footer {
   }
   h1{
     font-size: 3.5rem;
+    
   }
   h2{
     margin-top: 20px;
@@ -106,7 +108,8 @@ footer {
   img {
     width: 60%;
   }
-    footer {
-    margin-top: 5%；
+  footer {
+    margin-top: 5%;
+
   }
 }
