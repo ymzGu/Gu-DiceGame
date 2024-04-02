@@ -15,23 +15,23 @@
 }
 
 body {
-  background-color: #219C90;
+  background-color: #59D5E0;
 }
 
 h1 {
   margin: 20px;
   font-family: 'Lobster', cursive;
-  text-shadow: 5px 0 #E9B824;
+  text-shadow: 5px 0 #F5DD61;
   font-size: 8rem;
-  color: #D83F31;
+  color: #F4538A;
 }
 
 h2 {
   font-size: 1.8rem;
-  color: #D83F31;
+  color: #F4538A;
   max-width: fit-content;
   padding: 15px;
-  background-color: #E9B824;
+  background-color: #F5DD61;
   border-radius: 50%;
   font-family:'Lobster', cursive;
   margin-left: auto;
@@ -50,7 +50,7 @@ h2 {
 
 .dicebox p{
   font-size: 2rem;
-  color: #EE9322;
+  color: #F4538A;
   font-family: 'Indie Flower', cursive;
   margin-top: 15px;
   margin-bottom: 5px;
