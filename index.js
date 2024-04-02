@@ -1,20 +1,41 @@
 
 window.onload = function(){
 
-    var player1Name = prompt("enter name 1");
-    var player2Name = prompt("enter name 2");
+    var nPlayer1Name = prompt("enter name 1");
+    var nPlayer2Name = prompt("enter name 2");
+
+    var player1Name;
+    if (nPlayer1Name.charCodeAt(0) > 0x4E00 && nPlayer1Name.charCodeAt(0) < 0x9FA5) {
+        player1Name = nPlayer1Name.substring(0, 5);
+    } else {
+        player1Name = nPlayer1Name.substring(0, 10);
+    }
+    var player2Name;
+    if (nPlayer2Name.charCodeAt(0) > 0x4E00 && nPlayer2Name.charCodeAt(0) < 0x9FA5) {
+        player2Name = nPlayer2Name.substring(0, 5);
+    } else {
+        player2Name = nPlayer2Name.substring(0, 10);
+    }
+
     var nameText =  document.querySelectorAll(".container p");
 
-    if (player1Name === "" || player1Name == null){
-        nameText[0] = "player 1";
-    } else {
-        nameText[0].innerText = player1Name;        
-    }
-    if (player2Name ==="" || player2Name == null){
-        nameText[1]= "player 2";
-    } else {
-        nameText[1].innerText = player2Name;
-    }
+
+        if (player1Name === "" || player1Name == null){
+            nameText[0].innerText = "player 1";
+        } else {
+            nameText[0].innerText = player1Name;        
+        }
+        if (player2Name ==="" || player2Name == null){
+            nameText[1].innerText= "player 2";
+        } else {
+            nameText[1].innerText = player2Name;
+        }
+
+
+
+
+
+
 
     var clickPlace = document.getElementsByTagName("h2");
     clickPlace[0].classList.add("unselectable");
