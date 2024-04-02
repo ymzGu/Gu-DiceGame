@@ -1,36 +1,151 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Dicee</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div id="forh1">
-      <h1>Good luck!</h1>
-    </div>
-      <h2>Click me to roll the dice</h2>
+.body{
+  height: 90vh;
+}
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  
+}
 
-      <div class="dicebox">
-      <div class="dice dice1">
-        <p>Player 1</p>
-        <img class="img1" src="./images/dice6.png" />
-      </div>
+.dice {
+  text-align: center;
+  display: inline-block;
 
-      <div class="dice dice2">
-        <p>Player 2</p>
-        <img class="img2" src="./images/dice6.png" />
-      </div>
-      </div>
+}
 
-    </div>
-<footer> 🎲 Gu Yue dice game🎲 </footer>  
+body {
+  background-color: #59D5E0;
+}
 
-    <script src="./index.js"></script>
-  </body>
-</html>
+h1 {
+  margin: 20px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #F5DD61;
+  font-size: 8rem;
+  color: #F4538A;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #F4538A;
+  max-width: fit-content;
+  padding: 15px;
+  background-color: #F5DD61;
+  border-radius: 50%;
+  font-family:'Lobster', cursive;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+.unselectable {
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* Standard syntax */
+}
+
+.dicebox p{
+  font-size: 2rem;
+  color: #F4538A;
+  font-family: 'Indie Flower', cursive;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.dice{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+img {
+  margin-top: 5px;
+  width: 80%;
+}
+
+footer {
+  margin-top: 3%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+@media (max-width: 960px) {
+ 
+  .body{
+    height: 90vh;
+  }
+  
+  .container {
+    margin-top: 10px;
+    height: 85vh;
+    width: 100%;
+  }
+
+  #forh1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+  }
+  h1{
+    font-size: 5rem;
+  }
+  h2{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+  }
+  .dicebox p{
+    font-size: 1.8rem;
+  }
+  .dice{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  img {
+    width: 60%;
+  }
+  footer {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  #forh1{
+    margin-top: 35px;
+  }
+  h1{
+    font-size: 3.5rem;
+  }
+  h2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+  }
+  .dicebox p{
+    font-weight: 500;
+  }
+  .dice{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  img {
+    width: 70%;
+  }
+  .dicebox{
+    display: flex;
+    justify-content: center;
+  }
+  .dice1{
+    margin-right: -7px;
+  }
+  .dice2{
+    margin-left: -7px;
+  }
+  footer {
+    margin-top: 2%;
+  }
+}
