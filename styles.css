@@ -17,7 +17,11 @@
 body {
   background-color: #59D5E0;
 }
-
+#forh1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 h1 {
   margin: 20px;
   font-family: 'Lobster', cursive;
@@ -67,7 +71,7 @@ img {
 
 footer {
   margin-top: 3%;
-  color: #EEEEEE;
+  color: #F4538A;
   text-align: center;
   font-family: 'Indie Flower', cursive;
 }
@@ -85,9 +89,6 @@ footer {
   }
 
   #forh1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 130px;
   }
   h1{
