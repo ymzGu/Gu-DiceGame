@@ -1,8 +1,7 @@
-
 window.onload = function(){
 
-    var nPlayer1Name = prompt("Enter player1's name");
-    var nPlayer2Name = prompt("Enter player2's name");
+    var nPlayer1Name = prompt("Enter player1's name") || "";
+    var nPlayer2Name = prompt("Enter player2's name") || "";
 
     var player1Name;
     if (nPlayer1Name.charCodeAt(0) > 0x4E00 && nPlayer1Name.charCodeAt(0) < 0x9FA5) {
